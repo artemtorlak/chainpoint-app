@@ -1,0 +1,11 @@
+<center>
+  <h1>Submit Badge</h1>
+  <body>
+    <%= form_with url: submit_to_chainpoint_badges_path do |form|%>
+      <%= form.date_field :issue_date, id: "submitform", required: true %> <br/><br/>
+      <%= form.text_field :recipient_name, id: "submitform", placeholder: 'Badge Recipient Name', required: true %><br/><br/>
+      <%= form.text_field :uuid, id: "submitform", placeholder: 'Badge UUID', required: true %> <br/><br/>
+      <%= form.submit 'Submit To Chainpoint' %>
+    <% end %>
+  </body>
+</center>

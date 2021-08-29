@@ -1,0 +1,16 @@
+<div style="text-align: center;">
+  <h1>Badge submitted!</h1>
+  <body>
+    <div style="display: inline-block; text-align: left;">
+      <% params[:badge_hashes].each do |hash_data| %>
+        <b>Proof ID: </b> <br/ >
+        <%= hash_data['proof_id'] %><br/ ><br/ >
+
+        <br/ ><br/ >
+
+        <b>Hash: </b><br/ >
+        <%= hash_data['hash'] %><br/ >
+      <% end %>
+    </div>
+  </body>
+</div>
