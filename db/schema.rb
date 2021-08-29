@@ -14,13 +14,4 @@ ActiveRecord::Schema.define(version: 2021_08_25_065841) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "badges", force: :cascade do |t|
-    t.datetime "issue_date", null: false
-    t.string "recipient_name", null: false
-    t.string "uuid", null: false
-    t.string "hash"
-    t.string "hash_id_node"
-  end
-
 end
